@@ -15,7 +15,14 @@ const TemplateWrapper = ({ children }) => {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
-
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2GQ2G662PZ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-2GQ2G662PZ');
+        </script>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
